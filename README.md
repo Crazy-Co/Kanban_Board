@@ -33,16 +33,13 @@ Here are some glimpses of the app in action:
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/src/assets/screenshots/1.png
-    1" alt="Kanban View 1" /></td>
-    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/src/assets/screenshots/2.png
-    " alt="Kanban View 2" /></td>
+  https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/1.png
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/1.png" alt="Kanban View 1" /></td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/2.png" alt="Kanban View 2" /></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/src/assets/screenshots/3.png
-" alt="Kanban View 3" /></td>
-    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/src/assets/screenshots/4.png
-" alt="Kanban View 4" /></td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/3.png" alt="Kanban View 3" /></td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/4.png" alt="Kanban View 4" /></td>
   </tr>
 </table>
 
