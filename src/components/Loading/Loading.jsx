@@ -2,9 +2,9 @@ import React from "react";
 import { Grid } from "react-loader-spinner";
 const Loading = ({
   text = "Loading",
-  showdots = true,
-  dotSize = 25,
-  dotColor = "#1db3c8",
+  show = true,
+  Size = 25,
+  Color = "#1db3c8",
   textColor = "#1db3c8",
   textStyle = {},
 }) => {
@@ -20,13 +20,13 @@ const Loading = ({
         gap: "5px",
       }}
     >
-      {showdots && (
+      {show && (
         <Grid
-          height={dotSize}
-          width={dotSize}
-          color={dotColor}
+          height={Size}
+          width={Size}
+          color={Color}
           visible={true}
-          ariaLabel="three-dots-rotating"
+          ariaLabel="grid"
         />
       )}
       <span
