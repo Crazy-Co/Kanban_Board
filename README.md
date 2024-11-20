@@ -33,7 +33,6 @@ Here are some glimpses of the app in action:
 
 <table>
   <tr>
-  https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/1.png
     <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/1.png" alt="Kanban View 1" /></td>
     <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/2.png" alt="Kanban View 2" /></td>
   </tr>
