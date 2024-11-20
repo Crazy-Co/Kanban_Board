@@ -33,20 +33,12 @@ Here are some glimpses of the app in action:
 
 <table>
   <tr>
-    <td>
-      ![Kanban View 1](https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/master/src/assets/screenshots/1.png)
-    </td>
-    <td>
-      ![Kanban View 2](https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/master/src/assets/screenshots/2.png)
-    </td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/1.png" alt="Kanban View 1" /></td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/2.png" alt="Kanban View 2" /></td>
   </tr>
   <tr>
-    <td>
-      ![Kanban View 3](https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/master/src/assets/screenshots/3.png)
-    </td>
-    <td>
-      ![Kanban View 4](https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/master/src/assets/screenshots/4.png)
-    </td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/3.png" alt="Kanban View 3" /></td>
+    <td><img src="https://raw.githubusercontent.com/Crazy-Co/Kanban_Board/refs/heads/master/src/assets/screenshots/4.png" alt="Kanban View 4" /></td>
   </tr>
 </table>
 
