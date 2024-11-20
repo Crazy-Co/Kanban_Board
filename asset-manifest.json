@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Kanban_Board/static/css/main.4711d306.css",
-    "main.js": "/Kanban_Board/static/js/main.81747e31.js",
+    "main.js": "/Kanban_Board/static/js/main.6d6e7333.js",
     "static/media/Display.svg": "/Kanban_Board/static/media/Display.0168095040354204011b596e30abf32e.svg",
     "static/media/Cancelled.svg": "/Kanban_Board/static/media/Cancelled.360749f102ea2ac68b5841e9f9ff29dd.svg",
     "static/media/3 dot menu.svg": "/Kanban_Board/static/media/3 dot menu.4caedb468f68b915626e0e35045257b3.svg",
     "static/media/No-priority.svg": "/Kanban_Board/static/media/No-priority.7218b139313728c6a4efa8da6e34852b.svg",
     "static/media/Done.svg": "/Kanban_Board/static/media/Done.a5158827c6345b2f141ff681c57cb3ac.svg",
     "static/media/down.svg": "/Kanban_Board/static/media/down.b19d146ddbaad572f0f5cebb6dbdf766.svg",
-    "index.html": "/Kanban_Board/index.html",
     "static/media/Img - Low Priority.svg": "/Kanban_Board/static/media/Img - Low Priority.491e21f9000cb90112dea470dbb72650.svg",
+    "index.html": "/Kanban_Board/index.html",
     "static/media/Img - Medium Priority.svg": "/Kanban_Board/static/media/Img - Medium Priority.83775665307e977d62e9b0fc7fb95cc4.svg",
     "static/media/Img - High Priority.svg": "/Kanban_Board/static/media/Img - High Priority.5024fd0d163cb13c95f2d29079e2974d.svg",
     "static/media/SVG - Urgent Priority grey.svg": "/Kanban_Board/static/media/SVG - Urgent Priority grey.45cb3c374d391aeb2ee4672390634279.svg",
@@ -19,10 +19,10 @@
     "static/media/Backlog.svg": "/Kanban_Board/static/media/Backlog.97adf3356b7d2e775ef530f7aed206e0.svg",
     "static/media/To-do.svg": "/Kanban_Board/static/media/To-do.c01d92afcffeef58b2cd9ae080df1f58.svg",
     "main.4711d306.css.map": "/Kanban_Board/static/css/main.4711d306.css.map",
-    "main.81747e31.js.map": "/Kanban_Board/static/js/main.81747e31.js.map"
+    "main.6d6e7333.js.map": "/Kanban_Board/static/js/main.6d6e7333.js.map"
   },
   "entrypoints": [
     "static/css/main.4711d306.css",
-    "static/js/main.81747e31.js"
+    "static/js/main.6d6e7333.js"
   ]
 }
