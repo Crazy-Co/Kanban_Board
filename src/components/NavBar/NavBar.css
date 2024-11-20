@@ -1,4 +1,5 @@
 .selectGroup {
+    font-size: 13px;
     padding: 2.5px;
     width: auto;
 }
@@ -22,6 +23,7 @@
 }
 
 .btn {
+    font-size: 13px;
     background: #ffffff;
     border: 2px solid #ebe5e5;
     border-radius: 10px;
@@ -30,9 +32,19 @@
     align-items: center;
     width: 110px;
     box-shadow: 0px 0px 2px 0px rgb(243, 242, 243);
-}
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+  }
+  
+  .btn:active {
+    background: #f5f4f49c;
+    transform: scale(0.99); /* Slightly shrink the button */
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2); /* Dim the shadow */
+  }
+  
 
 .selectStyle {
+    font-size: 13px;
     width: 100px;
     border-radius: 5px;
     background: white;

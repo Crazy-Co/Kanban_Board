@@ -3,17 +3,48 @@ import "./Card.css";
 import { Icon } from "../../Actions/IconUtils";
 
 const Card = ({ id, title, tag, status, priority }) => {
+  // Constants
   const isStatus = localStorage.getItem("group") === "status";
   const isPriority = localStorage.getItem("group") === "priority";
-  const statusOrder = ["Backlog", "Todo", "In progress", "Done"];
-  const getStatusIndex = (status) => {
-    return statusOrder.indexOf(status);
+
+  const statusIcons = {
+    Backlog: "backlog",
+    Todo: "toDo",
+    "In progress": "inProgress",
+    Done: "done",
+  };
+
+  const priorityIcons = {
+    1: "lowPriority",
+    2: "mediumPriority",
+    3: "highPriority",
+    4: "urgentPriorityGrey",
+    default: "noPriority",
+  };
+
+  // Render Functions
+  const renderStatusIcon = (status) => {
+    return <Icon name={statusIcons[status] || null} />;
+  };
+
+  const renderPriorityIcon = (priority) => {
+    return <Icon name={priorityIcons[priority] || priorityIcons.default} />;
+  };
+
+  const renderTags = (tags) => {
+    return tags?.map((element, index) => (
+      <div key={index} className="tags color-grey">
+        <span style={{ paddingRight: "3px" }}>• </span>
+        {element}
+      </div>
+    ));
   };
 
   return (
     <div className="cardContainer flex-gap-10" style={{ gap: "5px" }}>
+      {/* Card Heading */}
       <div className="cardHeading flex-sb">
-        <span style={{ textTransform: "uppercase" }} className="color-grey">
+        <span className="color-grey" style={{ textTransform: "uppercase" }}>
           {id}
         </span>
         {(isPriority || isStatus) && (
@@ -22,52 +53,27 @@ const Card = ({ id, title, tag, status, priority }) => {
             style={{ width: "30px", height: "30px" }}
           >
             <img
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="User"
               style={{ width: "95%", height: "95%", borderRadius: "50%" }}
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-              alt="UserImage"
             />
             <div className="showStatus"></div>
           </div>
         )}
       </div>
 
+      {/* Card Title */}
       <div className="cardTitle" style={{ fontWeight: 200 }}>
-        {!isStatus &&
-          (status === "Backlog" ? (
-            <Icon name="backlog" />
-          ) : status === "Todo" ? (
-            <Icon name="toDo" />
-          ) : status === "In progress" ? (
-            <Icon name="inProgress" />
-          ) : status === "Done" ? (
-            <Icon name="done" />
-          ) : null)}
+        {!isStatus && renderStatusIcon(status)}
         <span>{title}</span>
       </div>
 
+      {/* Card Tags */}
       <div className="cardTags">
-        {!isPriority ? (
-          <div className="tags color-grey">
-            {priority === 1 ? (
-              <Icon name="lowPriority" />
-            ) : priority === 2 ? (
-              <Icon name="mediumPriority" />
-            ) : priority === 3 ? (
-              <Icon name="highPriority" />
-            ) : priority === 4 ? (
-              <Icon name="urgentPriorityGrey" />
-            ) : (
-              <Icon name="noPriority" />
-            )}
-          </div>
-        ) : null}
-        {tag?.map((element, index) => {
-          return (
-            <div key={index} className="tags color-grey">
-              <span style={{ paddingRight: "3px" }}>• </span> {element}
-            </div>
-          );
-        })}
+        {!isPriority && (
+          <div className="tags color-grey">{renderPriorityIcon(priority)}</div>
+        )}
+        {renderTags(tag)}
       </div>
     </div>
   );

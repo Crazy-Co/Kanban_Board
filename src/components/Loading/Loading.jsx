@@ -1,13 +1,11 @@
 import React from "react";
-import { ThreeDots } from "react-loader-spinner";
+import { Grid } from "react-loader-spinner";
 const Loading = ({
-  size = 80,
-  color = "#4fa94d",
   text = "Loading",
   showdots = true,
-  dotSize = 50,
-  dotColor = "#4fa94d",
-  textColor = "green",
+  dotSize = 25,
+  dotColor = "#1db3c8",
+  textColor = "#1db3c8",
   textStyle = {},
 }) => {
   return (
@@ -23,7 +21,7 @@ const Loading = ({
       }}
     >
       {showdots && (
-        <ThreeDots
+        <Grid
           height={dotSize}
           width={dotSize}
           color={dotColor}
@@ -33,7 +31,7 @@ const Loading = ({
       )}
       <span
         style={{
-          fontSize: "20px",
+          fontSize: "15px",
           color: textColor,
           letterSpacing: "3px",
           ...textStyle,

@@ -1,5 +1,4 @@
 import axios from "axios";
-import Card from "../components/Card/Card";
 
 // Define action types as constants
 const DATA_REQUEST = "DATA_REQUEST";
@@ -8,6 +7,7 @@ const DATA_FAILURE = "DATA_FAILURE";
 const SELECT_DATA_REQUEST = "SELECT_DATA_REQUEST";
 const SELECT_DATA_SUCCESS = "SELECT_DATA_SUCCESS";
 const SELECT_DATA_FAILURE = "SELECT_DATA_FAILURE";
+
 export const fetchAllData = () => async (dispatch) => {
   try {
     dispatch({ type: DATA_REQUEST });
@@ -19,6 +19,7 @@ export const fetchAllData = () => async (dispatch) => {
     dispatch({ type: DATA_FAILURE });
   }
 };
+
 export const selectData =
   (group, allTickets, orderValue) => async (dispatch) => {
     try {

@@ -102,9 +102,10 @@ const DashBoard = () => {
                   <div className="imageContainer">
                     <img
                       className="userAvatar"
-                      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                      src="https://xsgames.co/randomusers/avatar.php?g=male"
                       alt="User"
                     />
+
                     <div className="showStatus"></div>
                   </div>
                 ) : (

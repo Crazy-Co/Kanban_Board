@@ -1,25 +1,34 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-// import Card from './components/Card/Card';
 import DashBoard from "./components/DashBoard/DashBoard";
+import Loading from "./components/Loading/Loading";
+
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllData } from "./Actions/DataAction";
-import Loading from "./components/Loading/Loading";
+
 const App = () => {
   const dispatch = useDispatch();
-  const { allTickets } = useSelector((state) => state.DataReducer);
+
+  // Extracting state from Redux
+  const { loading } = useSelector((state) => state.DataReducer);
+
+  // Fetching data on component mount
   useEffect(() => {
     dispatch(fetchAllData());
   }, [dispatch]);
 
-  return allTickets ? (
-    <div>
-      <NavBar />
-      <DashBoard />
+  return (
+    <div className="app-container">
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <NavBar />
+          <DashBoard />
+        </>
+      )}
     </div>
-  ) : (
-    <Loading />
   );
 };
 
